@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda ou Doe seu Bichinho de Pelúcia</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <h3>Cadastre seu bichinho de pelúcia para que ele(a) possa encontrar um novo lar mais rápido!</h3>
+        </div>
+        <div class="form-container">
+          <div class="form-header">
+            <p>Formulário</p>
+          </div>
+          <div class="form-body">
+            <h1 class="form-title">Venda ou doe sua pelúcia de forma mais fácil!</h1>
+            <p>
+              Descreva as características e marque os opcionais que ele(a) possui
+            </p>
+            <form>
+              <div class="box-input">
+                <label for="title"
+                  >Título do anúncio <span class="required-field">*</span></label
+                >
+                <input
+                  type="text"
+                  name="title"
+                  id="title"
+                  class="block"
+                  placeholder="Um título para anunciar seu bichinho de pelúcia"
+                  minlength="1"
+                  maxlength="30"
+                  required
+                />
+              </div>
+              <div class="box-input">
+                <label for="price"
+                  >Preço <span class="required-field">*</span></label
+                >
+                <input
+                  type="number"
+                  name="price"
+                  id="price"
+                  class="block"
+                  placeholder="Defina o preço, se ele tiver, se não coloque 0"
+                />
+              </div>
+              <div class="box-input">
+                <label for="description"
+                  >Descrição <span class="required-field">*</span></label
+                >
+                <textarea
+                  name="description"
+                  id="description"
+                  class="block"
+                  placeholder="Descreva como é o seu bichinho de pelúcia"
+                ></textarea>
+              </div>
+              <div class="box-input">
+                <label for="name"
+                  >Marca <span class="required-field">*</span></label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="block"
+                  placeholder="Digite qual é o nome do seu bichinho de pelúcia"
+                  required
+                />
+              </div>
+              <div class="box-input">
+                <label for="size"
+                  >Tamanho <span class="required-field">*</span></label
+                >
+                <input
+                  type="text"
+                  name="size"
+                  id="size"
+                  class="block"
+                  placeholder="Digite qual é o tamanho do seu bichinho de pelúcia"
+                  required
+                />
+              </div>
+              <div class="box-input">
+                <label for="years"
+                  >Idade <span class="required-field">*</span></label
+                >
+                <input
+                  type="number"
+                  name="years"
+                  id="mileage"
+                  class="block"
+                  placeholder="Digite a idade que seu bichinho de pelúcia possui"
+                  required
+                />
+              </div>
+              <div class="box-input">
+                <label for="purchase_date"
+                  >Data de adoção <span class="required-field">*</span></label
+                >
+                <input
+                  type="date"
+                  name="purchase_date"
+                  id="purchase_date"
+                  class="block"
+                  required
+                />
+              </div>
+              <div class="box-input">
+                <p>Tipo de negócio: <span class="required-field">*</span></p>
+                <input type="radio" id="doa" name="gear" />
+                <label for="doa">Doação</label>
+                <input type="radio" id="venda" name="gear" />
+                <label for="venda">Venda</label>
+                <input type="radio" id="outro" name="gear" />
+                <label for="outro">Outros</label>
+              </div>
+              <div class="optional-box">
+                <p>Opcionais que a sua pelúcia possui</p>
+                <ul class="optional-list">
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="ties"
+                      name="optional[]"
+                      value="ties"
+                    />
+                    <label for="ties">Laços para enfeite</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="clothes"
+                      name="optional[]"
+                      value="clothes"
+                    />
+                    <label for="clothes">Roupas</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="handbag" name="optional[]" value="handbag" />
+                    <label for="handbag">Bolsa</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="basket"
+                      name="optional[]"
+                      value="basket"
+                    />
+                    <label for="basket">Cesta</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="optional-box">
+                <ul class="optional-list">
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="glasses"
+                      name="optional[]"
+                      value="glasses"
+                    />
+                    <label for="glasses">Óculos</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="pendyrar"
+                      name="optional[]"
+                      value="pendyrar"
+                    />
+                    <label for="pendyrar">Pode ser pendurado</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="sing"
+                      name="optional[]"
+                      value="sing"
+                    />
+                    <label for="sing">Canta</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="other"
+                      name="optional[]"
+                      value="other"
+                    />
+                    <label for="other">Outros</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="box-input">
+                <p>Fotos do bichinho de pelúcia: <span class="required-field">*</span></p>
+                <input
+                  type="file"
+                  multiple
+                  accept="image/png, image/jpg"
+                  id="images"
+                  name="images"
+                  required
+                />
+              </div>
+              <input type="submit" value="Enviar" class="btn-submit" />
+            </form>
+          </div>
+        </div>
+      </div> 
+</body>
+
+</html>
